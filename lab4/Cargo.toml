@@ -1,0 +1,11 @@
+[package]
+name = "lab4"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes = { workspace = true }
+block-modes = { workspace = true }
+block-padding = { workspace = true }
+clap = { workspace = true, features = ["derive"] }
+sha2 = { workspace = true }
