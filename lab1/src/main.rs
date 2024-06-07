@@ -28,7 +28,7 @@ enum AttackCommands {
     /// Get all possible decrypted texts based on provided encrypted text
     CypherText { encrypted: String },
     /// Decrypt text with provided encrypted text and english word dictionary
-    CypherTextDyctionary {
+    CypherTextDictionary {
         dictionary: PathBuf,
         encrypted: String,
     },
@@ -101,7 +101,7 @@ fn main() {
                     );
                 }
             }
-            AttackCommands::CypherTextDyctionary {
+            AttackCommands::CypherTextDictionary {
                 dictionary,
                 encrypted,
             } => {

@@ -7,7 +7,7 @@ fn main() {
     // Получаем имя файла из аргументов командной строки
     let args: Vec<String> = env::args().collect();
     if args.len() < 2 {
-        println!("Использование: entropy <имя_файла>");
+        println!("Использование: lab2 <имя_файла>");
         return;
     }
     let filename = &args[1];
